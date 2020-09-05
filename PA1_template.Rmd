@@ -2,7 +2,11 @@
 title: "Reproducible Research Peer Graded Project 1"
 author: "Jason Carlson"
 date: "3-September-2020"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
+  md_document:
+    variant: markdown_github
 ---
 
 ```{r setup, include=FALSE}
