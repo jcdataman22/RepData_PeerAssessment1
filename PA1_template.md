@@ -140,10 +140,13 @@ head(steps_per_day)
 -   Make a histogram of the total number of steps taken each day
 
 ``` r
+png(file = "plot1.png")
 hist(steps_per_day$steps, main="Histogram of steps taken each day", xlab="Number of steps per day", ylab="Days with each number of steps", col="steel blue", breaks = 30)
+dev.off()
 ```
 
-![](PA1_template_files/figure-markdown_github/unnamed-chunk-11-1.png)
+    ## quartz_off_screen 
+    ##                 2
 
 -   Calculate and report the mean and median of the total number of
     steps taken per day by showing the summary of the dataset containing
